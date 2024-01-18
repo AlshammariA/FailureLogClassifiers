@@ -1,1 +1,1 @@
-# The Artifict of Failure Log Classifier (ICST-24)
+# The Artifact of Failure Log Classifier (ICST-24)
