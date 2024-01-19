@@ -11,4 +11,4 @@ In this step, we demonstrate how to process the dataset (Flaky and True Failures
 
 ## Step 2) De-duplication Approaches
 
-In this step, we show how do we apply/implmenet the three approaches we discuss in our paper: **1)text-baed matching**, **2)Failure Log Classifier**, and **1)TF-IDF**. please refer [Here](https://github.com/AlshammariA/FailureLogClassifiers/tree/main/de-duplication-approaches) for a complete guidelines. 
+In this step, we show how do we apply/implmenet the three approaches we discuss in our paper: **1)text-baed matching**, **2)Failure Log Classifier**, and **1)TF-IDF**. Please refer [Here](https://github.com/AlshammariA/FailureLogClassifiers/tree/main/de-duplication-approaches) for complete guidelines. 
