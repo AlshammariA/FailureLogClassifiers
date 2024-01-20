@@ -23,6 +23,29 @@ The dataset contains the following files:
 
 -   JSON file with test names as keys and mutation indexes in pit reports indicating killed, survived, or flaky mutants. This file can be reproduced (will be discussed later).
 
+### test_name.xml structure:
+There are two main blocks in each test_name.xml file:
+- `<tests>` : contains a list of `<test>` block (each one represent one type of flaky failure reported in FlakeFlagger dataset. Each `<test>` has the following:
+	- `<test_name>`: which have these main attributes as follow:
+		- ***frequency***: The number of times this failure has been detected 
+		- ***project***: The name of the project where this test belongs to
+		- ***source***: The source of flaky failure (in our dataset is FlakeFlagger)
+		- ***status***: The status of this failure. In this case, the status is FLAKY
+	- `<test_exception>`: reports the failure message
+	- `test_stackTrace`: Full stactraces of the failure
+- `<mutants>` : contains a list of `<mutant>` block (each one represent one mutant that was killed by the test. Each `<mutant>` has the following attributes:
+	- `<mutant_name>`: which have these main attributes as follow:
+		- ***mutant_id***: refers to the index of the pit report 
+		- ***source***: The source where we collect the mutant. In our case, we collect them using PIT
+		- ***status***: The status of the mutant. If a test kills this mutant every time it runs, it is KILLED. If the test sometime kills the mutant and sometimes not, then it is FLAKY.  
+		- ***numberOfKills***: The number of times the mutant was killed by the test. 
+
+### summary-of-test_name.xml structure:
+This is a simplified version of the test_name.xml by considering the following:
+1. We consider only the exception type (e.g. AssertionError) in `<test_exception>`
+2. We consider only the top lines of the stack traces as discussed in our paper. 
+Then, we group the failures based on these steps.
+
 ## Prepare the dataset
 The script `prepare-dataset.ipynb`will generate two main files:
 - **summary-of-test_name.xml**
