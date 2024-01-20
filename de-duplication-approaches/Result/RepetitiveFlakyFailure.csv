@@ -1,0 +1,24 @@
+Project,Tests,Flaky Failures,Set(FlakyFailures),withTest[1],withTest(1:n),acrossTestWithoutTestNames[1],acrossTestWithoutTestNames(1:n)
+Alluxio-alluxio,114,16858,310,11,16847,5,16853
+square-okhttp,99,26486,120,40,26446,17,26469
+apache-ambari,51,4063,54,0,4063,0,4063
+hector-client-hector,33,6529,33,0,6529,0,6529
+activiti-activiti,30,1363,31,13,1350,6,1357
+tootallnate-java-websocket,23,2143,45,2,2141,0,2143
+apache-httpcore,22,354,22,9,345,2,352
+qos-ch-logback,20,438,21,8,430,4,434
+apache-hbase,20,2519,26,3,2516,2,2517
+kevinsawicki.http-request,18,3501,18,3,3498,0,3501
+wildfly-wildfly,18,50,18,12,38,4,46
+wro4j-wro4j,14,10833,21,3,10830,2,10831
+spring-projects-spring-boot,12,14,13,12,2,5,9
+undertow-io-undertow,7,92,12,3,89,1,91
+orbit-orbit,7,2943,7,0,2943,0,2943
+elasticjob-elastic-job-lite,3,7,4,3,4,0,7
+doanduyhai-Achilles,2,121,3,1,120,1,120
+ninjaframework-ninja,1,476,1,0,476,0,476
+jknack-handlebars.java,1,411,1,0,411,0,411
+zxing-zxing,1,322,1,0,322,0,322
+joel-costigliola-assertj-core,1,974,1,0,974,0,974
+apache-commons-exec,1,33,1,0,33,0,33
+,498,80530,763,123,80407,49,80481
